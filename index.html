@@ -25,25 +25,25 @@
         <form id="inputBook">
           <div class="input">
             <label for="inputBookId">Id Buku</label>
-            <input id="inputBookId" type="number" required />
+            <input id="inputBookId" type="number" required value="1" />
           </div>
           <div class="input">
             <label for="inputBookTitle">Judul</label>
-            <input id="inputBookTitle" type="text" required />
+            <input id="inputBookTitle" type="text" required value="ini judul"/>
           </div>
           <div class="input">
             <label for="inputBookAuthor">Penulis</label>
-            <input id="inputBookAuthor" type="text" required />
+            <input id="inputBookAuthor" type="text" required value="penulis"/>
           </div>
           <div class="input">
             <label for="inputBookYear">Tahun</label>
-            <input id="inputBookYear" type="number" required />
+            <input id="inputBookYear" type="number" required value="2021"/>
           </div>
           <div class="input_inline">
             <label for="inputBookIsComplete">Selesai dibaca</label>
-            <input id="inputBookIsComplete" type="checkbox" />
+            <input id="inputBookIsComplete" type="checkbox" onchange="handleChange(event)"  />
           </div>
-          <button id="bookSubmit" type="submit">
+          <button id="bookSubmit" type="submit" >
             Masukkan Buku ke rak <span>Belum selesai dibaca</span>
           </button>
         </form>
@@ -75,11 +75,11 @@
         </div>
       </section>
 
-      <section class="book_shelf">
+      <section class="book_shelf" >
         <h2>Selesai dibaca</h2>
 
-        <!-- <div id="completeBookshelfList" class="book_list">
-          <article class="book_item">
+        <div id="completeBookshelfList" class="book_list">
+          <!-- <article class="book_item">
             <h3>Book Title</h3>
             <p>Penulis: John Doe</p>
             <p>Tahun: 2002</p>
@@ -87,8 +87,8 @@
             <div class="action">
               <button class="green">Belum selesai di Baca</button>
               <button class="red">Hapus buku</button>
-            </div>
-          </article> -->
+            </div> -->
+          </article>
         </div>
       </section>
     </main>
